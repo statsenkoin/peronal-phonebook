@@ -16,7 +16,7 @@
 npm install react-router-dom
 ```
 
-### Посилання
+### Посилання на документацію
 
 [ReactDOM.createRoot](https://ru.reactjs.org/docs/rendering-elements.html)
 
