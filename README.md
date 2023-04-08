@@ -33,3 +33,21 @@ npm install react-router-dom
 ```jsx
 <BrowserRouter basename="/peronal-phonebook">
 ```
+
+## `03-add-register/login-pages`
+
+```
+npm i formik
+```
+
+## `0xx-additional`
+
+```
+npm i react-helmet
+```
+
+### Посилання на документацію
+
+[Helmet](https://www.npmjs.com/package/react-helmet)
+
+1. Yup in forms
