@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 export function Header() {
   return (
     <>
-      <div>
+      <h2>
         <span role="img" aria-label="icon"></span>My Phonebook
-      </div>
+      </h2>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/register">Register</Link>
