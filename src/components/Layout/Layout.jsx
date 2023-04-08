@@ -9,7 +9,9 @@ export function Layout() {
       <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>
-      <footer>Footer</footer>
+      <footer>
+        <h2>Footer</h2>
+      </footer>
     </>
   );
 }
