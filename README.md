@@ -40,6 +40,10 @@ npm install react-router-dom
 npm i formik
 ```
 
+### Посилання на документацію
+
+[Formik](https://formik.org/docs/examples/basic)
+
 ## `0xx-additional`
 
 ```
