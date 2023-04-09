@@ -1,11 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'redux/contacts/selectors';
-import { addContact } from 'redux/contacts/operations';
 import PropTypes from 'prop-types';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import 'yup-phone-lite';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 // import {
 //   FormWrapper,
 //   Label,
@@ -47,15 +47,13 @@ export function ContactsForm() {
         }}
       >
         <Form>
-          <label htmlFor="name">
-            Name:
-            <Field type="text" name="name" />
-          </label>
+          <label htmlFor="name">Name:</label>
+          <Field type="text" name="name" />
+
           <ErrorMessage name="name" component="span"></ErrorMessage>
-          <label htmlFor="number">
-            Number:
-            <Field type="tel" name="number" />
-          </label>
+          <label htmlFor="number">Number:</label>
+          <Field type="tel" name="number" />
+
           <ErrorMessage name="number" component="span"></ErrorMessage>
           <button type="submit">Add contact</button>
         </Form>
