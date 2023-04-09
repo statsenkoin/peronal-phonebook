@@ -58,6 +58,14 @@ npm i axios
 
 [axios](https://www.npmjs.com/package/axios)
 
+## `06-persistor`
+
+```
+npm i redux-persist
+```
+
+[persistor](https://www.npmjs.com/package/redux-persist)
+
 ## `0xx-additional`
 
 ```
