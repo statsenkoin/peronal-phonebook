@@ -24,8 +24,6 @@ export default function Contacts() {
       <h2>Phonebook</h2>
       <ContactsForm />
       <h2>Contacts</h2>
-      {/* <ContactsFilter />
-      <ContactList /> */}
       {contacts.length ? (
         <div>
           <ContactsFilter />
