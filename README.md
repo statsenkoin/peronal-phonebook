@@ -66,6 +66,18 @@ npm i redux-persist
 
 [persistor](https://www.npmjs.com/package/redux-persist)
 
+## `08-add-contacts`
+
+```
+npm i prop-types
+npm i yup
+npm i yup-phone-lite
+```
+
+[PropTypes](https://www.npmjs.com/package/prop-types)
+[Yup](https://www.npmjs.com/package/yup)
+[Yup-phone-light](https://www.npmjs.com/package/yup-phone-lite)
+
 ## `0xx-additional`
 
 ```
