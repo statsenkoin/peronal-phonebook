@@ -5,8 +5,12 @@ import {
   Field,
   // ErrorMessage
 } from 'formik';
+// import { onSubmit } from 'redux/auth/operations';
+import { onSubmit } from 'redux/auth/slice';
+import { useDispatch } from 'react-redux';
 
 export function RegisterForm() {
+  const dispatch = useDispatch();
   return (
     <div>
       <Formik
@@ -20,6 +24,9 @@ export function RegisterForm() {
           //     ...values,
           //   });
           console.log('RegisterForm values :>> ', values);
+          // =========================================
+          dispatch(onSubmit(values));
+          // =========================================
           resetForm();
         }}
       >
