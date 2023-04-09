@@ -1,17 +1,12 @@
-import { Link } from 'react-router-dom';
+import { AppNav, AuthNav, UserMenu } from 'components';
+import { useAuth } from 'hooks';
 
 export function Header() {
+  const { isLoggedIn } = useAuth();
   return (
-    <>
-      <h2>
-        <span role="img" aria-label="icon"></span>My Phonebook
-      </h2>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/register">Register</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/contacts">Contacts</Link>
-      </nav>
-    </>
+    <div>
+      <AppNav />
+      {isLoggedIn ? <UserMenu /> : <AuthNav />}
+    </div>
   );
 }
