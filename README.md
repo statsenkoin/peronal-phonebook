@@ -44,6 +44,12 @@ npm i formik
 
 [Formik](https://formik.org/docs/examples/basic)
 
+## `04-redux-base-store`
+
+```
+npm install @reduxjs/toolkit react-redux
+```
+
 ## `0xx-additional`
 
 ```
