@@ -6,6 +6,7 @@ export function AppNav() {
 
   return (
     <nav>
+      {/* Link to Home */}
       <Link to="/">
         <span>
           <span role="img" aria-label="icon"></span>My Phonebook
