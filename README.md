@@ -50,6 +50,14 @@ npm i formik
 npm install @reduxjs/toolkit react-redux
 ```
 
+## `05-auth-database`
+
+```
+npm i axios
+```
+
+[axios](https://www.npmjs.com/package/axios)
+
 ## `0xx-additional`
 
 ```

@@ -5,9 +5,8 @@ import {
   Field,
   // ErrorMessage
 } from 'formik';
-// import { onSubmit } from 'redux/auth/operations';
-import { onSubmit } from 'redux/auth/slice';
 import { useDispatch } from 'react-redux';
+import { register } from 'redux/auth/operations';
 
 export function RegisterForm() {
   const dispatch = useDispatch();
@@ -15,29 +14,19 @@ export function RegisterForm() {
     <div>
       <Formik
         initialValues={{
-          username: '',
+          name: '',
           email: '',
           password: '',
         }}
         onSubmit={(values, { resetForm }) => {
-          //   handleSubmit({
-          //     ...values,
-          //   });
-          console.log('RegisterForm values :>> ', values);
-          // =========================================
-          dispatch(onSubmit(values));
-          // =========================================
+          dispatch(register(values));
           resetForm();
         }}
       >
         <Form>
-          <label htmlFor="username">User name:</label>
-          <Field
-            type="text"
-            name="username"
-            placeholder="Enter user name"
-          ></Field>
-          {/* <ErrorMessage name="username" component="span"></ErrorMessage> */}
+          <label htmlFor="name">User name:</label>
+          <Field type="text" name="name" placeholder="Enter user name"></Field>
+          {/* <ErrorMessage name="name" component="span"></ErrorMessage> */}
 
           <label htmlFor="email">Email:</label>
           <Field type="email" name="email" placeholder="Enter email"></Field>

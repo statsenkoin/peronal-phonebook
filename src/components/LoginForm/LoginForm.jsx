@@ -6,7 +6,12 @@ import {
   // ErrorMessage
 } from 'formik';
 
+import { useDispatch } from 'react-redux';
+import { logIn } from 'redux/auth/operations';
+
 export function LoginForm() {
+  const dispatch = useDispatch();
+
   return (
     <div>
       <Formik
@@ -15,10 +20,7 @@ export function LoginForm() {
           password: '',
         }}
         onSubmit={(values, { resetForm }) => {
-          //   handleSubmit({
-          //     ...values,
-          //   });
-          console.log('LoginForm values :>> ', values);
+          dispatch(logIn(values));
           resetForm();
         }}
       >
