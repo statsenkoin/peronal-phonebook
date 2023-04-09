@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { setFilter } from 'redux/contacts/filterSlice';
 import { selectFilterValue } from 'redux/contacts/selectors';
-import PropTypes from 'prop-types';
 // import { FilterWrapper, FilterInput } from './Filter.styled';
 
 export function ContactsFilter() {
