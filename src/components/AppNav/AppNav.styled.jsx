@@ -5,14 +5,13 @@ export const Nav = styled.nav`
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 `;
 
 export const LinkStyled = styled(NavLink)`
   margin-right: 20px;
   font-size: 16px;
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 700;
   color: #fff;
 
@@ -23,6 +22,6 @@ export const LinkStyled = styled(NavLink)`
 
 export const HomeLink = styled.span`
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 4px;
 `;
