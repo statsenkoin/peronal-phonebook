@@ -1,18 +1,21 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from 'hooks';
+import { Typography } from '@mui/material';
 
 export function AppNav() {
   const { isLoggedIn } = useAuth();
 
   return (
-    <nav>
+    <>
       {/* Link to Home */}
       <Link to="/">
-        <span>
-          <span role="img" aria-label="icon"></span>My Phonebook
-        </span>
+        <Typography variant="button">My Phonebook</Typography>
       </Link>
-      {isLoggedIn && <Link to="/contacts">Contacts</Link>}
-    </nav>
+      {isLoggedIn && (
+        <Link to="/contacts">
+          <Typography variant="h6">Contacts</Typography>
+        </Link>
+      )}
+    </>
   );
 }
