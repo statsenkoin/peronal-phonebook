@@ -1,18 +1,21 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useAuth } from 'hooks';
+import { GiNotebook } from 'react-icons/gi';
+import { Nav, HomeLink, LinkStyled } from './AppNav.styled';
 
 export function AppNav() {
   const { isLoggedIn } = useAuth();
 
   return (
-    <nav>
+    <Nav>
       {/* Link to Home */}
-      <Link to="/">
-        <span>
-          <span role="img" aria-label="icon"></span>My Phonebook
-        </span>
-      </Link>
-      {isLoggedIn && <Link to="/contacts">Contacts</Link>}
-    </nav>
+      <LinkStyled to="/">
+        <HomeLink>
+          <GiNotebook size={24} />
+          My Phonebook
+        </HomeLink>
+      </LinkStyled>
+      {isLoggedIn && <LinkStyled to="/contacts">Contacts</LinkStyled>}
+    </Nav>
   );
 }
