@@ -17,7 +17,7 @@ export const NavBar = styled.div`
   max-width: 700px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding-left: 20px;
   padding-right: 20px;
 `;
