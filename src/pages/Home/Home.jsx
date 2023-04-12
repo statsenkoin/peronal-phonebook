@@ -1,3 +1,9 @@
+import { HomeContent, HomePage } from './Home.styled';
+
 export default function Home() {
-  return <h2>Home Page</h2>;
+  return (
+    <HomePage>
+      <HomeContent>Home Page</HomeContent>
+    </HomePage>
+  );
 }
