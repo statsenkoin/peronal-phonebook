@@ -78,6 +78,15 @@ npm i yup-phone-lite
 [Yup](https://www.npmjs.com/package/yup)
 [Yup-phone-light](https://www.npmjs.com/package/yup-phone-lite)
 
+## `10-add-styles`
+
+```
+npm install @mui/material @emotion/react @emotion/styled
+npm install @fontsource/roboto
+npm install @mui/icons-material
+
+```
+
 ## `0xx-additional`
 
 ```
