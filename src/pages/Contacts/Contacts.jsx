@@ -9,6 +9,13 @@ import {
 } from 'redux/contacts/selectors';
 import { ContactList, ContactsFilter, ContactsForm } from 'components';
 
+import {
+  PageWrapper,
+  ContactsTitle,
+  ContactListBox,
+  Notification,
+} from './Contacts.styled';
+
 export default function Contacts() {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
@@ -20,20 +27,20 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <div>
-      <h2>Phonebook</h2>
+    <PageWrapper>
+      {/* <h2>Phonebook</h2> */}
       <ContactsForm />
-      <h2>Contacts</h2>
+      <ContactsTitle>Contacts</ContactsTitle>
       {contacts.length ? (
-        <div>
+        <ContactListBox>
           <ContactsFilter />
           <ContactList />
-        </div>
+        </ContactListBox>
       ) : (
-        <p>No any contacts in phonebook</p>
+        <Notification>No any contacts in phonebook</Notification>
       )}
-      {isLoading && !error && <h2>Loading...</h2>}
-    </div>
+      {isLoading && !error && <Notification>Loading...</Notification>}
+    </PageWrapper>
   );
 }
 
