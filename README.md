@@ -78,6 +78,16 @@ npm i yup-phone-lite
 [Yup](https://www.npmjs.com/package/yup)
 [Yup-phone-light](https://www.npmjs.com/package/yup-phone-lite)
 
+## `11-styled-components`
+
+```
+npm i styled-components
+npm install react-icons --save
+```
+
+[Styled-components](https://www.npmjs.com/package/styled-components)
+[react-icons](https://react-icons.github.io/react-icons)
+
 ## `0xx-additional`
 
 ```
