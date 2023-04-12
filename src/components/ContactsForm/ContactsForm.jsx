@@ -6,12 +6,13 @@ import * as Yup from 'yup';
 import 'yup-phone-lite';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
-// import {
-//   FormWrapper,
-//   Label,
-//   AddContactButton,
-//   ErrorText,
-// } from './FormikForm.styled';
+import {
+  FormWrapper,
+  Label,
+  AddContactButton,
+  ErrorText,
+  InputField,
+} from './ContactsForm.styled';
 
 const SubmitSchema = Yup.object().shape({
   name: Yup.string().required('Enter contact name'),
@@ -46,17 +47,21 @@ export function ContactsForm() {
           resetForm();
         }}
       >
-        <Form>
-          <label htmlFor="name">Name:</label>
-          <Field type="text" name="name" />
+        <FormWrapper>
+          <Label htmlFor="name">
+            Name:
+            <InputField type="text" name="name" />
+          </Label>
           <ErrorMessage name="name" component="span"></ErrorMessage>
 
-          <label htmlFor="number">Number:</label>
-          <Field type="tel" name="number" />
-          <ErrorMessage name="number" component="span"></ErrorMessage>
+          <Label htmlFor="number">
+            Number:
+            <InputField type="tel" name="number" />
+          </Label>
+          <ErrorText name="number" component="span"></ErrorText>
 
-          <button type="submit">Add contact</button>
-        </Form>
+          <AddContactButton type="submit">Add contact</AddContactButton>
+        </FormWrapper>
       </Formik>
     </div>
   );
