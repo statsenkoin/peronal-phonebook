@@ -49,12 +49,12 @@ export function ContactsForm() {
         <Form>
           <label htmlFor="name">Name:</label>
           <Field type="text" name="name" />
-
           <ErrorMessage name="name" component="span"></ErrorMessage>
+
           <label htmlFor="number">Number:</label>
           <Field type="tel" name="number" />
-
           <ErrorMessage name="number" component="span"></ErrorMessage>
+
           <button type="submit">Add contact</button>
         </Form>
       </Formik>
